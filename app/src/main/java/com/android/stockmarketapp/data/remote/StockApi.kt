@@ -1,5 +1,6 @@
 package com.android.stockmarketapp.data.remote
 
+import com.android.stockmarketapp.BuildConfig
 import com.android.stockmarketapp.data.remote.dto.CompanyInfoDto
 import com.android.stockmarketapp.domain.model.CompanyInfo
 import okhttp3.ResponseBody
@@ -27,7 +28,7 @@ interface StockApi {
     ): CompanyInfoDto
 
     companion object{
-        const val API_KEY = "WW039804XK9G2QZX"
+        const val API_KEY = BuildConfig.API_KEY
         const val BASE_URL = "https://alphavantage.co"
     }
 
